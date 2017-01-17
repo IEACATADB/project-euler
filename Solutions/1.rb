@@ -1,0 +1,7 @@
+require_relative '../euler'
+include Euler
+
+solution do
+ (1...1000).select{|i| i % 3 == 0 || i % 5 == 0}
+ .reduce(:+)
+end
